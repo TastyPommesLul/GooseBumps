@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "goosebumps",
+  "version": "${version}",
+  "name": "GooseBumps",
+  "description": "yup",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/goosebumps/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.tastypommeslul.goosebumps.client.GoosebumpsDataGenerator"
+    ],
+    "client": [
+      "net.tastypommeslul.goosebumps.client.GoosebumpsClient"
+    ],
+    "main": [
+      "net.tastypommeslul.goosebumps.Goosebumps"
+    ]
+  },
+  "mixins": [
+    "goosebumps.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
