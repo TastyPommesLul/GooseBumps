@@ -1,12 +1,9 @@
 package net.tastypommeslul.goosebumps.entity.client;
 
-import net.minecraft.client.render.entity.animation.Animation;
-import net.minecraft.client.render.entity.animation.AnimationHelper;
-import net.minecraft.client.render.entity.animation.Keyframe;
-import net.minecraft.client.render.entity.animation.Transformation;
+import net.minecraft.client.render.entity.animation.*;
 
 public class AmongUsAnimations {
-    public static final Animation walk = Animation.Builder.create(1.0F).looping()
+    public static final AnimationDefinition WALKING = AnimationDefinition.Builder.create(1.0F).looping()
             .addBoneAnimation("right_leg", new Transformation(Transformation.Targets.ROTATE,
                     new Keyframe(0.0F, AnimationHelper.createRotationalVector(-20.0F, 0.0F, 0.0F), Transformation.Interpolations.LINEAR),
                     new Keyframe(0.5F, AnimationHelper.createRotationalVector(20.0F, 0.0F, 0.0F), Transformation.Interpolations.LINEAR),

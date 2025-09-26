@@ -20,5 +20,6 @@ public class ModEntities {
 
     public static void registerEntities() {
         Goosebumps.LOGGER.info("Registering ModEntities for " + Goosebumps.MOD_ID);
+        Registry.register(Registries.ENTITY_TYPE, AMONG_US_KEY, AMONG_US);
     }
 }

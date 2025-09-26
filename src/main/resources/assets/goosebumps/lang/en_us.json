@@ -2,5 +2,8 @@
   "item.goosebumps.spear": "Spear",
 
   "itemgroup.goosebumps.goosebumps_itemgroup": "Goosebump Items",
-  "itemgroup.goosebumps.goosebumps_block_itemgroup": "Goosebump Blocks"
+  "itemgroup.goosebumps.goosebumps_block_itemgroup": "Goosebump Blocks",
+
+
+  "entity.goosebumps.among_us": "Amogus"
 }

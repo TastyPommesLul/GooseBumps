@@ -1,5 +1,7 @@
 package net.tastypommeslul.goosebumps.entity.custom;
 
+import net.minecraft.client.render.entity.state.EntityRenderState;
+import net.minecraft.client.render.entity.state.LivingEntityRenderState;
 import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
@@ -19,8 +21,10 @@ import net.tastypommeslul.goosebumps.entity.ModEntities;
 import org.jetbrains.annotations.Nullable;
 
 public class AmongUs extends AnimalEntity {
-    public final AnimationState walkingAnim = new AnimationState();
-    private int walkingAnimTimeout = 0;
+    public static class AmongUsEntityRenderState extends LivingEntityRenderState {
+        public static final AnimationState walkingAnim = new AnimationState();
+        public static int walkingAnimTimeout = 0;
+    }
     public AmongUs(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -28,8 +32,8 @@ public class AmongUs extends AnimalEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new WanderAroundGoal(this, 5));
-        this.goalSelector.add(1, new LookAtEntityGoal(this, PlayerEntity.class, 8f));
-        this.goalSelector.add(2, new LookAroundGoal(this));
+//        this.goalSelector.add(1, new LookAtEntityGoal(this, PlayerEntity.class, 8f));
+//        this.goalSelector.add(2, new LookAroundGoal(this));
     }
 
     public static DefaultAttributeContainer.Builder createAttributes() {
@@ -39,12 +43,12 @@ public class AmongUs extends AnimalEntity {
                 .add(EntityAttributes.ATTACK_DAMAGE, 0.5);
     }
 
-    private void setupAnimState() {
-        if (this.walkingAnimTimeout <= 0) {
-            this.walkingAnimTimeout = 20;
-            this.walkingAnim.start(this.age);
+    private void setupAnimStates() {
+        if (AmongUsEntityRenderState.walkingAnimTimeout <= 0) {
+            AmongUsEntityRenderState.walkingAnimTimeout = 20;
+            AmongUsEntityRenderState.walkingAnim.start(this.age);
         } else {
-            --this.walkingAnimTimeout;
+            --AmongUsEntityRenderState.walkingAnimTimeout;
         }
     }
 
@@ -53,7 +57,7 @@ public class AmongUs extends AnimalEntity {
         super.tick();
 
         if (this.getWorld().isClient()) {
-            this.setupAnimState();
+            this.setupAnimStates();
         }
     }
 
