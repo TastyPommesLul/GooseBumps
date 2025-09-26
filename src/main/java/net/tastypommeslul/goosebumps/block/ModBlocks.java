@@ -20,4 +20,7 @@ public class ModBlocks {
     private static void registerBlockItem(String name, Block block) {
         Registry.register(Registries.ITEM, Identifier.of(Goosebumps.MOD_ID, name), new BlockItem(block, SettingsUtils.itemSettings(name)));
     }
+    public static void registerModBlocks() {
+        Goosebumps.LOGGER.info("Registering Mod Blocks for " + Goosebumps.MOD_ID);
+    }
 }

@@ -1,4 +1,6 @@
 {
-  "itemGroup.goosebumps.goosebumps_itemgroup": "Goosebump Items",
-  "itemGroup.goosebumps.goosebumps_block_itemgroup": "Goosebump Blocks"
+  "item.goosebumps.spear": "Spear",
+
+  "itemgroup.goosebumps.goosebumps_itemgroup": "Goosebump Items",
+  "itemgroup.goosebumps.goosebumps_block_itemgroup": "Goosebump Blocks"
 }
