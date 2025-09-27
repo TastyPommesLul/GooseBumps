@@ -3,9 +3,15 @@
   "id": "goosebumps",
   "version": "${version}",
   "name": "GooseBumps",
-  "description": "yup",
-  "authors": [],
-  "contact": {},
+  "description": "Mod for Yoltronz's Community server!",
+  "authors": [
+    "TastyPommesLul"
+  ],
+  "contact": {
+    "homepage": "https://github.com/TastyPommesLul/GooseBumps",
+    "sources": "https://github.com/TastyPommesLul/GooseBumps",
+    "issues": "https://github.com/TastyPommesLul/GooseBumps/issues"
+  },
   "license": "All-Rights-Reserved",
   "icon": "assets/goosebumps/icon.png",
   "environment": "*",
