@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": "minecraft:iron_nugget"
+  },
+  "pattern": [
+    " NN",
+    "  N",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "goosebumps:spear_head"
+  }
+}

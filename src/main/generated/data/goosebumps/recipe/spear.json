@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "N": "minecraft:iron_nugget",
+    "H": "goosebumps:spear_head",
     "S": "minecraft:stick"
   },
   "pattern": [
-    " N ",
+    "  H",
     " S ",
-    " S "
+    "   "
   ],
   "result": {
     "count": 1,

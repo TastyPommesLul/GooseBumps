@@ -17,8 +17,10 @@ public class ModItemGroups {
                             .icon(() -> new ItemStack(ModItems.SPEAR))
                             .entries((displayContext, entries) -> {
                                 entries.add(ModItems.SPEAR);
+                                entries.add(ModItems.SPEAR_HEAD);
                             })
                             .build());
+
 //    public static final ItemGroup GOOSEBUMPS_BLOCK_ITEMGROUP =
 //            Registry.register(Registries.ITEM_GROUP, Identifier.of(Goosebumps.MOD_ID, "goosebumps_block_itemgroup"),
 //                    FabricItemGroup.builder()

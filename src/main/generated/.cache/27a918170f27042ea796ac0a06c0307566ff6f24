@@ -1,3 +1,5 @@
 // 1.21.8	-999999999-01-01T00:00:00	GooseBumps/
-fc3d2c0e2526a4c3e7f4ec6e01d164e787068686 data/goosebumps/advancement/recipes/combat/spear.json
-172567fa2aa26c47a7cbdfb631126624eb9eaff4 data/goosebumps/recipe/spear.json
+e66dec399fbc8dcd322afad9d75f2df982d8d8d1 data/goosebumps/advancement/recipes/combat/spear.json
+952794e4205ae3906e1e30a14dbca012d095ceb6 data/goosebumps/advancement/recipes/combat/spear_head.json
+98c1ba88918afe6111f5e0f8b45e9d465792cd57 data/goosebumps/recipe/spear.json
+03cd6792b9812633b803e3b9f0491b8b610afaa0 data/goosebumps/recipe/spear_head.json

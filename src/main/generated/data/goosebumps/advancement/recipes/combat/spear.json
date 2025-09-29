@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_iron_nugget": {
+    "has_spear_head": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:iron_nugget"
+            "items": "goosebumps:spear_head"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_iron_nugget"
+      "has_spear_head"
     ]
   ],
   "rewards": {

@@ -4,6 +4,7 @@
   "package": "net.tastypommeslul.goosebumps.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+
   ],
   "client": [
   ],
