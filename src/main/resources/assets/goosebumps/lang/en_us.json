@@ -5,6 +5,12 @@
   "itemgroup.goosebumps.goosebumps_itemgroup": "Goosebump Items",
   "itemgroup.goosebumps.goosebumps_block_itemgroup": "Goosebump Blocks",
 
+  "tooltip.goosebumps.spear.damage": "%s Attack Damage",
+  "tooltip.goosebumps.spear.speed": "%s Attack Speed",
+  "tooltip.goosebumps.spear.range": "%s Attack Range",
 
-  "entity.goosebumps.among_us": "Amogus"
+  "entity.goosebumps.among_us": "Amogus",
+
+
+  "goosebumps.config.title": "Goosebumps Config"
 }

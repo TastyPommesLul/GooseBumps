@@ -24,6 +24,9 @@
     ],
     "main": [
       "net.tastypommeslul.goosebumps.Goosebumps"
+    ],
+    "modmenu": [
+      "net.tastypommeslul.goosebumps.compat.ModMenuImpl"
     ]
   },
   "mixins": [
