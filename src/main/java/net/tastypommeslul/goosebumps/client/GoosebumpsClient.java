@@ -15,9 +15,10 @@ import net.tastypommeslul.goosebumps.entity.client.AmongUsRenderer;
 public class GoosebumpsClient implements ClientModInitializer {
 
     private static LatticeElements latticeElements;
+    public static final GoosebumpsConfig config = new GoosebumpsConfig();
     @Override
     public void onInitializeClient() {
-        latticeElements = LatticeElements.fromAnnotations(Text.literal("Goosebumps Config"), new GoosebumpsConfig());
+        latticeElements = LatticeElements.fromAnnotations(Text.literal("Goosebumps Config"), config);
         EntityModelLayerRegistry.registerModelLayer(AmongUsModel.AMONG_US, AmongUsModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.AMONG_US, AmongUsRenderer::new);
     }

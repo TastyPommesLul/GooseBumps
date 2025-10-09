@@ -9,6 +9,7 @@ import net.tastypommeslul.goosebumps.Goosebumps;
 
 public class SettingsUtils {
     public static AbstractBlock.Settings blockSettings(String identifier) {
+
         return AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Goosebumps.MOD_ID, identifier)));
     }
 
