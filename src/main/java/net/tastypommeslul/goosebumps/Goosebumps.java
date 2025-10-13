@@ -7,6 +7,7 @@ import net.tastypommeslul.goosebumps.entity.ModEntities;
 import net.tastypommeslul.goosebumps.entity.custom.AmongUs;
 import net.tastypommeslul.goosebumps.item.ModItemGroups;
 import net.tastypommeslul.goosebumps.item.ModItems;
+import net.tastypommeslul.goosebumps.sounds.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +22,7 @@ public class Goosebumps implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModItemGroups.registerModItemGroups();
         ModEntities.registerEntities();
+        ModSounds.registerSounds();
 
 
         FabricDefaultAttributeRegistry.register(ModEntities.AMONG_US, AmongUs.createAttributes());

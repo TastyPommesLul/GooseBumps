@@ -9,6 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.tastypommeslul.goosebumps.Goosebumps;
 
+@SuppressWarnings("unused")
 public class ModItemGroups {
     public static final ItemGroup GOOSEBUMPS_ITEMGROUP =
             Registry.register(Registries.ITEM_GROUP, Identifier.of(Goosebumps.MOD_ID, "goosebumps_itemgroup"),
@@ -18,6 +19,8 @@ public class ModItemGroups {
                             .entries((displayContext, entries) -> {
                                 entries.add(ModItems.SPEAR);
                                 entries.add(ModItems.SPEAR_HEAD);
+                                entries.add(ModItems.THRESHER);
+                                entries.add(ModItems.DUCK);
                             })
                             .build());
 

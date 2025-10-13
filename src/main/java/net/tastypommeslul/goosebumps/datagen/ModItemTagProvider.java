@@ -17,5 +17,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         valueLookupBuilder(ItemTags.SWORDS)
                 .add(ModItems.SPEAR);
+
+        valueLookupBuilder(ItemTags.MACE_ENCHANTABLE)
+                .add(ModItems.THRESHER);
     }
 }

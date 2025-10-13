@@ -21,9 +21,16 @@ public class GoosebumpsClient implements ClientModInitializer {
         latticeElements = LatticeElements.fromAnnotations(Text.literal("Goosebumps Config"), config);
         EntityModelLayerRegistry.registerModelLayer(AmongUsModel.AMONG_US, AmongUsModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.AMONG_US, AmongUsRenderer::new);
+
+//        HudElementRegistry.attachElementBefore(VanillaHudElements.CHAT, Identifier.of(Goosebumps.MOD_ID, "bleb"), GoosebumpsClient::render);
     }
 
     public static Screen createConfigScreen(Screen oldScreen) {
         return Lattice.createConfigScreen(latticeElements, null, oldScreen);
     }
+
+//    private static void render(DrawContext ctx, RenderTickCounter tickCounter) {
+//        MinecraftClient client = MinecraftClient.getInstance();
+//        ctx.drawText(client.textRenderer, "Boobies", (client.getWindow().getScaledWidth() / 2) - 19, client.getWindow().getScaledHeight() - 32, Colors.GREEN, true);
+//    }
 }

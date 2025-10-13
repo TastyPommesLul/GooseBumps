@@ -1,10 +1,12 @@
 {
   "item.goosebumps.spear": "Spear",
   "item.goosebumps.spear_head": "Spear Head",
+  "item.goosebumps.duck": "Rubber Ducky",
 
   "itemgroup.goosebumps.goosebumps_itemgroup": "Goosebump Items",
   "itemgroup.goosebumps.goosebumps_block_itemgroup": "Goosebump Blocks",
 
+  "tooltip.goosebumps.duck.tip": "§eRight click§r this §e§oDuck§r, to make it quack",
   "tooltip.goosebumps.spear.damage": "%s Attack Damage",
   "tooltip.goosebumps.spear.speed": "%s Attack Speed",
   "tooltip.goosebumps.spear.range": "%s Attack Range",
